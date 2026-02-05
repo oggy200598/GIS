@@ -75,10 +75,16 @@ WSGI_APPLICATION = 'site1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'GIS',  # Tên cơ sở dữ liệu MongoDB của bạn
+        'CLIENT': {
+            'host': 'mongodb+srv://oggy20598:oggy20598@gis.esj8qpb.mongodb.net/GIS?retryWrites=true&w=majority',  # Sửa lại URL MongoDB
+            'username': 'oggy20598',  # Tên người dùng MongoDB của bạn
+            'password': 'oggy20598',  # Mật khẩu MongoDB của bạn
+        },
     }
 }
+
 
 
 # Password validation
