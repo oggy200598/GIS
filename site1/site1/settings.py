@@ -75,15 +75,15 @@ WSGI_APPLICATION = 'site1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'GIS',  # Tên cơ sở dữ liệu MongoDB của bạn
-        'CLIENT': {
-            'host': 'mongodb+srv://oggy20598:oggy20598@gis.esj8qpb.mongodb.net/GIS?retryWrites=true&w=majority',  # Sửa lại URL MongoDB
-            'username': 'oggy20598',  # Tên người dùng MongoDB của bạn
-            'password': 'oggy20598',  # Mật khẩu MongoDB của bạn
-        },
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'GIS',          # tên database
+        'USER': 'postgres',     # user postgres
+        'PASSWORD': '442489',   # password postgres (đổi lại đúng pass bạn)
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
+
 
 
 
